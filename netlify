@@ -1,1 +1,11 @@
+[build
+]
+  base = "mobile"
+  command = "npm install -g bun && bun install && bunx expo export --platform web"
+  publish = "dist"
 
+[[redirects
+]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
